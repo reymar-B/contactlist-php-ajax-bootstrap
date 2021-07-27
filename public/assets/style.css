@@ -1,0 +1,43 @@
+.error-message{
+    color: rgb(80, 76, 76);
+    font-weight:bold;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border: 2px solid rgb(247, 135, 135) ;
+    border-radius: 5px;
+    margin: 15px;
+   
+    
+}
+.success-message{
+    color: rgb(80, 76, 76);
+    font-weight:bold;
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border: 2px solid rgb(124, 250, 124) ;
+    border-radius: 5px;
+}
+
+.inpt-border{
+    border-color: rgb(247, 135, 135) !important;
+   
+}
+
+.frm-bg
+{
+    background-color: rgb(12, 204, 211);
+    width: 30em;
+    border-radius: 5px;
+   
+}
+.log-pg
+{
+    height: 100vh;
+    background-color: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
