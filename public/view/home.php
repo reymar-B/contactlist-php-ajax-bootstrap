@@ -15,14 +15,15 @@
     <link rel="shortcut icon" type="image/png"  href="app/img/hxh.png">
     <link rel="stylesheet" href="public/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/assets/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
     <title>contact list</title>
 </head>
-<body>
+<body class="bg-home">
   <div class="container">
     <!-- Navigation -->
     <header>    
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href=" / "> Home </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
@@ -34,10 +35,12 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/logout"> Log out </a>
               </li>
+              <!-- Trigger Modal -->
               <li class="nav-item">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
                 data-bs-target="#contacts-add">Add Contacts</button>
               </li>
+              <!-- /Trigger Modal -->
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,7 +58,7 @@
           </div>  
           <!-- Load Table Data -->
           <div class="d-flex justify-content-center">
-            <div id="show-tbl" class="col-md-6"></div>
+            <div id="show-tbl" class="col-sm-12 col-md-8 col-lg-6"></div>
           </div>
 
           <!-- Modals -->

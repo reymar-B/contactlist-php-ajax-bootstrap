@@ -1,10 +1,21 @@
+h1, h2, h3, h4, h5, h6{
+    font-family:'Lobster',cursive!important;
+}
+.bg{
+    background-image: url('/app/img/phone-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    
+}
 .error-message{
     color: rgb(80, 76, 76);
     font-weight:bold;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(250, 248, 248);
     border-style: solid;
-    border: 2px solid rgb(247, 135, 135) ;
+    border: 2px solid rgb(250, 63, 63) ;
     border-radius: 5px;
     margin: 15px;
    
@@ -14,10 +25,11 @@
     color: rgb(80, 76, 76);
     font-weight:bold;
     padding: 10px;
-    background-color: white;
+    background-color: whitesmoke;
     border-style: solid;
-    border: 2px solid rgb(124, 250, 124) ;
+    border: 2px solid rgb(49, 255, 49) ;
     border-radius: 5px;
+    margin: 15px;
 }
 
 .inpt-border{
@@ -25,19 +37,13 @@
    
 }
 
-.frm-bg
+.custm-frm
 {
-    background-color: rgb(12, 204, 211);
+    background-color: rgb(100, 247, 234) ;
     width: 30em;
     border-radius: 5px;
    
 }
-.log-pg
-{
-    height: 100vh;
-    background-color: darkgray;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.bg-home{
+    background-color: #ffffff;
 }

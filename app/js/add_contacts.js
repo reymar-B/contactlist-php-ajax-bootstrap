@@ -89,13 +89,17 @@ function edit()
 function update()
 {
     $(document).on('click', '#upContacts', function(event){
-        alert('are you sure you want to update this contact?');
-        event.preventDefault();
-        let id =$('#up-id').val();
-        let name=$('#up-name').val();
-        let email=$('#up-email').val();
-        let phone=$('#up-phone').val();
-        let upContacts=$('#upContacts').val();
+        
+        response = confirm('are you sure you want to update this record?');
+        if(response == true)
+        {
+            event.preventDefault();
+            let id =$('#up-id').val();
+            let name=$('#up-name').val();
+            let email=$('#up-email').val();
+            let phone=$('#up-phone').val();
+            let upContacts=$('#upContacts').val();
+
             $.ajax({
                 url:'contacts',
                 method:'POST',
@@ -113,8 +117,10 @@ function update()
                     show_record();
                 }
             })
-            return false;
 
+        }
+        
+            return false;
         
     })
     $(document).on('click', '#btn-exit', function(){
@@ -127,23 +133,29 @@ function delete_contact()
 {
     $(document).on('click', '#del-contacts', function(event)
     {
-        event.preventDefault();
-        let id =$('#up-id').val();
-        let delContacts=$('#del-contacts').val();
-        $.ajax({
-            url:'contacts',
-            method:'POST',
-            data:{
-                delid:id,
-                delContacts:delContacts,
-            },
-            success:function()
-            {
-                confirm('are you sure you want to delete this contact?');
-                show_record();
-                $('form').trigger('reset');
-            }
-
-        })
+        var response = confirm('This action is irreversible. Do you still want to delete this record?');
+        if(response == true)
+        {
+            event.preventDefault();
+            let id =$('#up-id').val();
+            let delContacts=$('#del-contacts').val();
+            $.ajax
+            ({
+                url:'contacts',
+                method:'POST',
+                data:
+                {
+                    delid:id,
+                    delContacts:delContacts,
+                },
+                success:function()
+                {
+                    show_record();
+                    $('form').trigger('reset');
+                }
+    
+            })
+        }
     })
+    
 }

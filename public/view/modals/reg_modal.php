@@ -1,18 +1,16 @@
 <div class="modal fade" id="register-user" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel"> Register </h5>
-            </div>
+          <div class="modal-content" style="background-color: rgb(170, 250, 246);">
+              <h3 class="text-center m-3" id="exampleModalLabel"> Register </h3>
             <div class="modal-body">
   <!------------------ Modal Body ------------------------------------------------------->
             <form action="/test" method="POST">
-            <p id="reg-message"> </p>
-              <div class="mb-3">
+              <p id="reg-message"> </p>
+              <div class="m-3">
                 <label for="email" class="form-label">Email</label>
                 <input id="reg_email" type="email" class="form-control" id="email" aria-describedby="emailHelp" >
               </div>
-              <div class="mb-3">
+              <div class="m-3">
                 <label for="password" class="form-label">Password</label>
                 <input id="reg_password" type="password" class="form-control" >
               </div>
