@@ -5,7 +5,7 @@ jQuery(function(){
     update();
     delete_contact();
 })
-
+//this will insert new contact data to db
 function insert()
 {
     $(document).on('click', '#addContacts', function(event){
@@ -42,7 +42,7 @@ function insert()
     })
 }
 
-
+//this will show cantact lists to home screen
 function show_record()
 {
     let show='show';
@@ -63,6 +63,7 @@ function show_record()
 
 }
 
+// this will fetch the data to edit modal
 function edit()
 {
     $(document).on('click', '#edit', function()
@@ -85,7 +86,7 @@ function edit()
         return false;
     })
 }
-
+//this will update your contacts
 function update()
 {
     $(document).on('click', '#upContacts', function(event){
@@ -117,18 +118,15 @@ function update()
                     show_record();
                 }
             })
-
         }
-        
             return false;
-        
     })
     $(document).on('click', '#btn-exit', function(){
         $('#up-err-message').html('');
     })
-   
 }
 
+//this will delete your contacts
 function delete_contact()
 {
     $(document).on('click', '#del-contacts', function(event)
@@ -153,7 +151,6 @@ function delete_contact()
                     show_record();
                     $('form').trigger('reset');
                 }
-    
             })
         }
     })

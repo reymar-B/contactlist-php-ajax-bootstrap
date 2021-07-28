@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6{
 .error-message{
     color: rgb(80, 76, 76);
     font-weight:bold;
-    padding: 10px;
+    padding: 5px;
     background-color: rgb(250, 248, 248);
     border-style: solid;
     border: 2px solid rgb(250, 63, 63) ;
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6{
 .success-message{
     color: rgb(80, 76, 76);
     font-weight:bold;
-    padding: 10px;
+    padding: 5px;
     background-color: whitesmoke;
     border-style: solid;
     border: 2px solid rgb(49, 255, 49) ;
