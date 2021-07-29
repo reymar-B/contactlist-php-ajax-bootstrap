@@ -1,8 +1,5 @@
 <?php
 
-require_once "connect.php";
-
-
 function create( $data )
 {
     $email = $data;

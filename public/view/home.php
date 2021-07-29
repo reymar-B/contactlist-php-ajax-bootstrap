@@ -25,7 +25,8 @@
     <header>    
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href=" / "> Home </a>
+          <a id="p_profile" user_id="<?=$_SESSION['id']?>" class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#profile"> 
+          <span id="u_name" style="font-weight: bold; font-size: 1em;"></span> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -64,13 +65,14 @@
           <!-- Modals -->
           <?php require 'modals/contacts_modal.php'; ?>
           <?php require 'modals/edit_modal.php'; ?>
-
+          <?php require 'modals/profile_modal.php'; ?>
       </div>
     </main>
     </div>
-  <script src="app/js/jquery.js"></script>
+  <script src="app/js/jquery/jquery.js"></script>
   <script src="public/assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="app/js/add_contacts.js"></script>
+  <script src="app/js/users.js"></script>
   </body>
 </html>
 <?php }else header('location: /login') ?>

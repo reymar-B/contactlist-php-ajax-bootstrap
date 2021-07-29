@@ -50,7 +50,7 @@ if(isset($_SESSION['id']))
             </div>
         </div>
     
-    <script src="app/js/jquery.js"></script>
+    <script src="app/js/jquery/jquery.js"></script>
     <script src="public/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="app/js/login.js"></script>
     <script src="app/js/users.js"></script>

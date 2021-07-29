@@ -31,6 +31,7 @@ function loginValidate()
     }
 
     $_SESSION['id'] = $usersData['id'];
+    
     echo json_encode([ 'success'=>'success']);
     exit();
 }
