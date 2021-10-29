@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6{
-    font-family:'Lobster',cursive!important;
+    font-family:'Lobster'!important;
 }
 .bg{
     background-image: url('/app/img/phone-img.jpg');
@@ -46,4 +46,10 @@ h1, h2, h3, h4, h5, h6{
 }
 .bg-home{
     background-color: #ffffff;
+}
+
+td
+{
+    max-width: 10em;
+    overflow-x: hidden;
 }
